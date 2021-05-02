@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">GreenHouse</string>
+    <string name="textview">TextView</string>
+    <string name="login">
+        "The login page is the first page that appears to the user through which the user can enter the email and password that was registered with them before that. After entering, the main page will be opened for you, and if you are not registered, you can register through the link at the bottom of the page. "
+    </string>
+    <string name="signUp">
+        "Through the registration page, the user must register with the email and the password in the application for the ability to log in with the application again on the login page."
+    </string>
+    <string name="home">
+        "The main page opens to the user after logging in, contains a group of icons responsible for opening other pages after clicking on it."
+    </string>
+    <string name="live_monitor">
+         "On this page, the user shows the percentage of soil moisture and temperature in addition to the degree of humidity of the atmosphere through measurements of the sensor. "
+    </string>
+    <string name="crop_selection">
+        "On the crop selection page, the user selects one of the available crops, and after that he will display the date of the day and add the appropriate time to the selected crop and display it on the end date."
+    </string>
+    <string name="setting">
+         "On this page, we will display to the user the selected crop on the crop selection page, and if the user does not choose a crop, a link will appear for the user to transfer to the access selection page in addition to the best degree of humidity and temperature for the selected crop."
+    </string>
+    <string name="manual_action">
+        "On the manual control page, the user is shown the temperature and humidity, as well as buttons to operate the motor and warmer when needed."
+    </string>
+    <string name="about">
+        "Here we talk about who we are and what the application we have, the functionality of it and the methods of communicating with us through which the user can communicate with us."
+    </string>
+</resources>

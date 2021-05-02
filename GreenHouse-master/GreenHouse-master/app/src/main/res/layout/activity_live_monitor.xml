@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    tools:context=".LiveMonitorActivity">
+
+
+    <!--  <ImageView
+          android:id="@+id/humidity_img"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.046"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.046"
+          app:srcCompat="@drawable/plant"
+          tools:srcCompat="@drawable/plant" />
+
+      <TextView
+          android:id="@+id/humidity_txt"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Humidity"
+          android:textAppearance="@android:style/TextAppearance.Medium"
+          android:textColor="@color/primary_text"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.3"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.063"
+          tools:text="Humidity" />
+
+      <TextView
+          android:id="@+id/humidity_degree_txt"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Degree"
+          android:textColor="@color/secondary_text"
+          android:textStyle="bold"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.289"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.110000014"
+          tools:text="Degree" />
+
+      <ImageView
+          android:id="@+id/temperature_img"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.047"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.227"
+          app:srcCompat="@drawable/thermometer"
+          tools:srcCompat="@drawable/thermometer" />
+
+      <TextView
+          android:id="@+id/temperature_txt"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Temperature"
+          android:textAppearance="@android:style/TextAppearance.Medium"
+          android:textColor="@color/primary_text"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.33"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.222"
+          tools:text="Temperature" />
+
+      <TextView
+          android:id="@+id/temperature_degree_txt"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Degree"
+          android:textColor="@color/secondary_text"
+          android:textStyle="bold"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.941"
+          tools:text="Degree" />
+
+    <me.itangqi.waveloadingview.WaveLoadingView
+        android:id="@+id/waveLoadingView"
+        android:layout_width="270dp"
+        android:layout_height="190dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.038"
+        app:wlv_borderColor="@android:color/holo_green_dark"
+        app:wlv_borderWidth="3dp"
+        app:wlv_round_rectangle="true"
+        app:wlv_shapeType="circle"
+        app:wlv_titleBottomSize="16sp"
+        app:wlv_titleBottomStrokeColor="@android:color/holo_blue_dark"
+        app:wlv_titleBottomStrokeWidth="3dp"
+        app:wlv_titleCenterSize="16sp"
+        app:wlv_titleCenterStrokeColor="@android:color/holo_blue_dark"
+        app:wlv_titleCenterStrokeWidth="3dp"
+        app:wlv_titleTopSize="16sp"
+        app:wlv_titleTopStrokeColor="@android:color/holo_blue_dark"
+        app:wlv_titleTopStrokeWidth="3dp"
+        app:wlv_triangle_direction="north"
+        app:wlv_waveAmplitude="70"
+        app:wlv_waveColor="@android:color/holo_blue_dark" />
+
+    <com.example.greenhouse.Thermometer
+        android:id="@+id/thermometer"
+        android:layout_width="150dp"
+        android:layout_height="263dp"
+        android:foregroundGravity=""
+        app:innerColor="@color/innerColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.952"
+        app:middleColor="@color/middleColor"
+        app:outerColor="@color/outerColor"
+        app:radius="60dp"
+        app:textSize="16" />-->
+
+
+    <TextView
+        android:id="@+id/humidity_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Soil Moisture"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textColor="@color/primary_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.278"
+        tools:text="Soil Moisture" />
+
+    <com.mikhaellopez.circularprogressbar.CircularProgressBar
+        android:id="@+id/humidity_ProgressBar"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:cpb_background_progressbar_color="@color/divider"
+        app:cpb_background_progressbar_width="17dp"
+        app:cpb_progress="10"
+        app:cpb_progress_direction="to_right"
+        app:cpb_progress_max="100"
+        app:cpb_progressbar_color="#24C4F5"
+        app:cpb_progressbar_width="15dp"
+        app:cpb_round_border="false"
+        app:cpb_start_angle="180"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.735"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.211" />
+
+    <TextView
+        android:id="@+id/humidity_degree_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Degree"
+        android:textColor="@color/secondary_text"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.667"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.278"
+        tools:text="Degree" />
+
+    <TextView
+        android:id="@+id/temperature_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Temperature"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textColor="@color/primary_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.155"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.709"
+        tools:text="Temperature" />
+
+    <com.mikhaellopez.circularprogressbar.CircularProgressBar
+        android:id="@+id/temp_ProgressBar"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:cpb_background_progressbar_color="@color/divider"
+        app:cpb_background_progressbar_width="17dp"
+        app:cpb_progress="10"
+        app:cpb_progress_direction="to_right"
+        app:cpb_progress_max="100"
+        app:cpb_progressbar_color="#CF1B0E"
+        app:cpb_progressbar_width="15dp"
+        app:cpb_round_border="false"
+        app:cpb_start_angle="180"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.735"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.774" />
+
+    <TextView
+        android:id="@+id/temperature_degree_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Degree"
+        android:textColor="@color/secondary_text"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.667"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.711"
+        tools:text="Degree" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    tools:context=".HomeActivity">
+
+    <ImageView
+        android:id="@+id/bk_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/homebk" />
+
+    <ImageView
+        android:id="@+id/live_monitor_img"
+        android:layout_width="95dp"
+        android:layout_height="110dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/shadow"
+        android:elevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bk_img"
+        app:layout_constraintVertical_bias="0.558"
+        app:srcCompat="@drawable/live_monitor" />
+
+    <ImageView
+        android:id="@+id/manual_action_img"
+        android:layout_width="95dp"
+        android:layout_height="110dp"
+        android:background="@drawable/shadow"
+        android:elevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.549"
+        app:srcCompat="@drawable/manual_action" />
+
+    <ImageView
+        android:id="@+id/setting_img"
+        android:layout_width="95dp"
+        android:layout_height="110dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/shadow"
+        android:elevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.56"
+        app:srcCompat="@drawable/setting" />
+
+    <ImageView
+        android:id="@+id/crops_img"
+        android:layout_width="95dp"
+        android:layout_height="110dp"
+        android:background="@drawable/shadow"
+        android:elevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.837"
+        app:srcCompat="@drawable/crops" />
+
+    <ImageView
+        android:id="@+id/help_img"
+        android:layout_width="95dp"
+        android:layout_height="110dp"
+        android:background="@drawable/shadow"
+        android:elevation="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/bk_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.839"
+        app:srcCompat="@drawable/help" />
+
+    <ImageView
+        android:id="@+id/about_img"
+        android:layout_width="95dp"
+        android:layout_height="110dp"
+        android:background="@drawable/shadow"
+        android:elevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.839"
+        app:srcCompat="@drawable/about" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
